@@ -28,6 +28,8 @@ const Dashboard = () => {
       });
 
       if (!res.ok) {
+        const data = await res.json();
+        toast.error(data.detail);
         throw new Error("Failed to generate key");
       }
 
