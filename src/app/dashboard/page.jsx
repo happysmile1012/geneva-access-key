@@ -117,13 +117,17 @@ const Dashboard = () => {
           >
             📋
           </button>
+          
         </div>
         <h1 className="relative absolute left-1/2 translate-x-[-50%] top-[calc(50%-110px)] text-center text-2xl">
           Access Key
         </h1>
-
-        <div className="!relative absolute left-1/2 translate-x-[-50%] top-[calc(50%-20px)] justify-center flex gap-[15px]">
+        
+        <div className="!relative absolute left-1/2 translate-x-[-50%] top-[calc(50%-30px)] justify-center flex gap-[15px]">
           <div>
+            <div className="text-red-600 font-bold m-auto w-[350px]">
+            This is your password & anonymous identity. Save this for future logins!
+            </div>
             <div >
               Email <span className="text-red-600 text-[12px]">{error}</span>
             </div>
@@ -136,6 +140,7 @@ const Dashboard = () => {
             <div align="center">
               <Button className="mt-[20px]" onClick={() => generateKey()}>Generate</Button>
             </div>
+            
           </div>
         </div>
       </div>
